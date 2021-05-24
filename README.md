@@ -1,4 +1,4 @@
-# file_log
+# filelog
 
 Functions to write logs in file disk for V.
 
@@ -22,7 +22,7 @@ I created this library to log behavior oriented data when my user browse my web 
 ## Installation
 
 ```v
-v install khalyomede.file_log
+v install khalyomede.filelog
 ```
 
 ## Examples
@@ -36,7 +36,7 @@ v install khalyomede.file_log
 In this example, we will log a debug message.
 
 ```v
-import khalyomede.file_log.src.file_log { FileLog, LogSaveMode }
+import khalyomede.filelog.src.filelog { FileLog, LogSaveMode }
 
 fn main() {
   log := FileLog{
@@ -60,7 +60,7 @@ If you open the file "logs/app.log", this is what you will see:
 In this example, we will log in a file that will be "rotate" per day.
 
 ```v
-import khalyomede.file_log.src.file_log { FileLog, LogSaveMode }
+import khalyomede.filelog.src.filelog { FileLog, LogSaveMode }
 
 fn main() {
   log := FileLog{
@@ -86,7 +86,7 @@ The log will automatically append logs in a file prefixed by the date of the wri
 In this example, we will log a message using a given severity.
 
 ```v
-import khalyomede.file_log.src.file_log { FileLog, LogSaveMode, LogSeverity }
+import khalyomede.filelog.src.filelog { FileLog, LogSaveMode, LogSeverity }
 
 fn main() {
   log := FileLog{
@@ -121,7 +121,7 @@ LogSeverity.emergency
 If you don't want to pass them manually, use the shorthand functions instead:
 
 ```v
-import khalyomede.file_log.src.file_log { FileLog, LogSaveMode }
+import khalyomede.filelog.src.filelog { FileLog, LogSaveMode }
 
 fn main() {
   log := FileLog{

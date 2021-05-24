@@ -1,4 +1,4 @@
-module file_log
+module filelog
 
 pub enum LogSaveMode {
 	single

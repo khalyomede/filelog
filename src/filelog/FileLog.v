@@ -1,4 +1,4 @@
-module file_log
+module filelog
 
 pub struct FileLog {
 	pub:

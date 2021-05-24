@@ -1,4 +1,4 @@
-module file_log
+module filelog
 
 pub fn severity_to_str(severity LogSeverity) string {
 	return match severity {

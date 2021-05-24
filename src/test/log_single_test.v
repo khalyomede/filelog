@@ -1,6 +1,6 @@
 module test
 
-import file_log { FileLog, LogSaveMode, LogSeverity }
+import filelog { FileLog, LogSaveMode, LogSeverity }
 import os
 import time
 

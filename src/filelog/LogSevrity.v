@@ -1,6 +1,6 @@
 // Todo: extract it in its own package
 
-module file_log
+module filelog
 
 pub enum LogSeverity {
 	debug
