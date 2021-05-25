@@ -36,7 +36,7 @@ v install khalyomede.filelog
 In this example, we will log a debug message.
 
 ```v
-import khalyomede.filelog.src.filelog { FileLog, LogSaveMode }
+import khalyomede.filelog { FileLog, LogSaveMode }
 
 fn main() {
   log := FileLog{
@@ -60,7 +60,7 @@ If you open the file "logs/app.log", this is what you will see:
 In this example, we will log in a file that will be "rotate" per day.
 
 ```v
-import khalyomede.filelog.src.filelog { FileLog, LogSaveMode }
+import khalyomede.filelog { FileLog, LogSaveMode }
 
 fn main() {
   log := FileLog{
@@ -86,7 +86,7 @@ The log will automatically append logs in a file prefixed by the date of the wri
 In this example, we will log a message using a given severity.
 
 ```v
-import khalyomede.filelog.src.filelog { FileLog, LogSaveMode, LogSeverity }
+import khalyomede.filelog { FileLog, LogSaveMode, LogSeverity }
 
 fn main() {
   log := FileLog{
@@ -121,7 +121,7 @@ LogSeverity.emergency
 If you don't want to pass them manually, use the shorthand functions instead:
 
 ```v
-import khalyomede.filelog.src.filelog { FileLog, LogSaveMode }
+import khalyomede.filelog { FileLog, LogSaveMode }
 
 fn main() {
   log := FileLog{
@@ -144,5 +144,5 @@ fn main() {
 ## Test
 
 ```v
-v test src/test
+v test .
 ```
